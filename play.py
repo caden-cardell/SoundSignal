@@ -17,3 +17,7 @@ signal = amplitude * np.sin(2 * np.pi * frequency * t + phase)
 # Play the sound
 sd.play(signal, samplerate=fs)
 sd.wait()  # Wait until the sound is done
+
+# Play the sound
+sd.play(signal, samplerate=fs / 2)
+sd.wait()  # Wait until the sound is done
